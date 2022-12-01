@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 import componentes.Temporizador;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.input.MouseEvent;
 
 /**
  *
@@ -23,9 +22,13 @@ public class AppusoTemporizador extends Application {
     public void start(Stage primaryStage) {
         Temporizador temporizador = new Temporizador();
         
-        temporizador.setEtiqueta("Cuenta atrás");
+        temporizador.setEtiqueta("Cronómetro");
+        
+        // Funciones de comienzo del contador
         temporizador.setTiempo(0, 0, 3);
-        temporizador.calculaCycleCount(0,0,3);
+        temporizador.calculaCycleCount();
+        temporizador.startTimeline();
+        
         temporizador.setMedida("segundos");
         temporizador.setColoresYBorde("-fx-background-color: #f54248;","-fx-background-color: #e32026;", 7);
         
