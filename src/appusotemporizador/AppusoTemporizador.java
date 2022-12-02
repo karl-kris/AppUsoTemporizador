@@ -13,7 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
 /**
- *
+ *  
  * @author usuario
  */
 public class AppusoTemporizador extends Application {
